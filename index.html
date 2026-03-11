@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Best Practices -->
+    <title>Pravallika Sri - Portfolio | Full Stack Developer & AI Enthusiast</title>
+    <meta name="description" content="Personal portfolio of Pravallika Sri, a Computer Science Engineering student specializing in Artificial Intelligence. Showcasing projects, skills, and background.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <div class="logo">Pravallika Sri</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About & Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                <span id="theme-icon">🌙</span> Dark Mode
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="animate-up">Hi, I'm <span class="highlight">Pravallika Sri</span></h1>
+                <h2 class="animate-up delay-1">Computer Science & AI Engineering Student</h2>
+                <p class="animate-up delay-2">I am currently pursuing Computer Science Engineering with a specialization in Artificial Intelligence. I enjoy exploring AI and learning new technologies, and my goal is to use technology to create useful and impactful solutions.</p>
+                <div class="hero-actions animate-up delay-3">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Skills Section -->
+        <section id="about" class="about-section">
+            <h2 class="section-title">About Me & My Skills</h2>
+            <div class="about-grid">
+                <div class="background-info card">
+                    <h3>Background</h3>
+                    <p>I am currently pursuing Computer Science Engineering with a specialization in Artificial Intelligence.</p>
+                    
+                    <h3 class="mt-4">Interests</h3>
+                    <p>Artificial Intelligence, Web Development, and building real-world tech solutions.</p>
+
+                    <h3 class="mt-4">Goals</h3>
+                    <p>To become a skilled full stack developer and work on innovative AI-driven applications.</p>
+                </div>
+                
+                <div class="skills-info card">
+                    <h3>My Skills</h3>
+                    <p class="skills-intro">Languages and technologies I frequently use:</p>
+                    <div class="skills-tags">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Face Detection Attendance System</h3>
+                        <p>An AI-based system that automatically marks attendance using advanced face recognition technology.</p>
+                        <div class="project-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>A professional, responsive portfolio website featuring a clean UI, deep dark mode, and a functional contact form utilizing serverless form submission.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Contact Me</h2>
+            <p class="contact-subtitle">Interested in collaborating or have a question? I'd love to hear from you!</p>
+            <p class="contact-email">Reach me directly at: <strong><a href="mailto:sagarapupravallikasri@gmail.com">sagarapupravallikasri@gmail.com</a></strong></p>
+            
+            <div class="contact-card card">
+                <!-- Replace EXACT_FORM_ID with your Formspree form ID to receive emails -->
+                <form action="https://formspree.io/f/EXACT_FORM_ID" method="POST" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="johndoe@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary submit-btn">Send Message</button>
+                    <p class="form-status" id="form-status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
