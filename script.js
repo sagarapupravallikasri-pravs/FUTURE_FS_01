@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Theme Toggle Functionality
+    
     const themeToggleBtn = document.getElementById('theme-toggle');
     const themeIcon = document.getElementById('theme-icon');
     const htmlElement = document.documentElement;
 
-    // Check for saved theme in localStorage
+    
     const currentTheme = localStorage.getItem('theme');
 
     if (currentTheme) {
-        // If a theme was previously saved, apply it
+        
         htmlElement.setAttribute('data-theme', currentTheme);
         if (currentTheme === 'dark') {
             themeIcon.textContent = '☀️';
@@ -28,19 +28,19 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggleBtn.addEventListener('click', () => {
         let theme = htmlElement.getAttribute('data-theme');
         if (theme === 'dark') {
-            // Switch to Light
+            
             htmlElement.removeAttribute('data-theme');
             themeToggleBtn.innerHTML = '<span id="theme-icon">🌙</span> Dark Mode';
             localStorage.setItem('theme', 'light');
         } else {
-            // Switch to Dark
+            
             htmlElement.setAttribute('data-theme', 'dark');
             themeToggleBtn.innerHTML = '<span id="theme-icon">☀️</span> Light Mode';
             localStorage.setItem('theme', 'dark');
         }
     });
 
-    // Handle Formspree submission feedback dynamically (optional but good practice)
+    
     const contactForm = document.getElementById('contact-form');
     const formStatus = document.getElementById('form-status');
 
